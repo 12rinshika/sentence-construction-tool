@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+ 
+}
+
+.start-page-content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.start-page-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #413791;
+  font-family: 'Roboto';
+}
+
+@media screen and (max-width: 767px) {
+  .start-page-content h1 {
+    font-size: 24px;
+  }
+  
+}
+
+.start-page-content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.start-page-content ul{
+  padding-left: 0px;
+}
+
+.start-page-content ul li {
+  font-size: 18px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: 2;
+}
+
+@media screen and (max-width: 767px){
+  .start-page-content ul li{
+    align-items: left;
+    font-size: 14px;
+  }
+  .start-page-content p{
+    font-size: 16px;
+  }
+}
+
+.start-page-content ul li svg {
+  margin-right: 10px;
+  color: green; /* Change icon color if needed */
+  font-size: 20px; /* Adjust icon size */
+}
+
+
+.start-page-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.start-page-content button:hover {
+  background-color: #45a049;
+}
+
+.container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+}
+.container-content{
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px){
+  .top-bar{
+    flex-direction: column;
+  }
+}
+.top-bar-heading{
+  color: #272440;
+  text-align: center;
+}
+.timer-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quit-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.instruction {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.question-area {
+  margin: 20px 0;
+}
+
+.sentence {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #1c1838;
+  font-family: 'Roboto';
+}
+
+@media screen and (max-width: 767px){
+.sentence{
+  font-size: 15px;
+}
+}
+
+.blank {
+  display: inline-block;
+  width: 60px;
+  border-bottom: 2px solid black;
+  margin: 0 5px;
+}
+
+.filled {
+  margin: 0 5px;
+  background: #edf2f0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 130px;
+}
+
+.option-btn:hover{
+  background: #d5edfe;
+  color: #494463;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.next-btn:hover{
+  background-color: #c1f8ca;
+  color: #413791;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.feedback-screen {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.result-card {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.feedback-heading{
+
+  color: #1c1838;
+
+  font-size: 34px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+@media screen and (max-width: 767px){
+  .feedback-heading{
+    font-size: 26px;
+  }
+}
+.correct {
+  background-color: #d4edda;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+}
+
+.dashboard-btn {
+  margin-top: 20px;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
